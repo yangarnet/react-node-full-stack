@@ -1,0 +1,6 @@
+.product-header {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    border-bottom: solid var(--primary);
+}

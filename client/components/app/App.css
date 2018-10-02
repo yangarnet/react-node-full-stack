@@ -1,0 +1,80 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: rgb(235, 233, 233);
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.container {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    .product-header {
+        grid-template-columns: 1fr;
+    }
+    .product-sumary {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding-top: 0em;
+    }
+    .display-option {
+        text-align: right;
+        padding-top: 0;
+    }
+    .product-count {
+        font-size: 0.8em;
+        text-align: right;
+        padding-top: 0.2em;
+    }
+    .product-all {
+        font-size: 1em !important;
+    }
+    select {
+        font-size: 0.8em;
+    }
+    .product-grid {
+        grid-gap: 0.5em !important;
+        padding-top: 0.4em;
+    }
+    .pagination {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pagination-nav {
+        font-size: 0.8em;
+    }
+    .pagination-nav a {
+        padding: 0.2em 0.5em !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-all {
+        font-size: 1.2em;
+    }
+    .product-count select {
+        font-size: 1em;
+    }
+    .product-grid {
+        grid-gap: 0.7em;
+        padding-top: 0.6em;
+    }
+    .pagination-nav a {
+        padding: 0.3em 0.8em;
+    }
+}

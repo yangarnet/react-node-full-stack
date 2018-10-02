@@ -1,0 +1,12 @@
+{
+  "development": {
+    "PORT": 3001,
+    "DATA_SOURCE": "JSON"
+  },
+  "docker_development": {
+
+  },
+  "test": {
+
+  }
+}

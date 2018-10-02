@@ -1,0 +1,21 @@
+.display-option {
+    text-align: right;
+    padding-top: 3.5em;
+    display: inline-block;
+}
+
+select {
+    background-color: rgb(235, 233, 233);
+    border: 0;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    font-size: 1em;
+    color: #b3b3b3;
+    padding-bottom: 0.5em;
+}
