@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropType from 'prop-types';
 import './ProductDispalyFilter.css';
+import ProductDispalyOption from './ProductDisplayOption';
 
 class ProductDisplayFilter extends Component {
     constructor(props) {
@@ -15,16 +16,7 @@ class ProductDisplayFilter extends Component {
     render() {
         return (
             <div className="display-option">
-                <select onChange={this.onChange}>
-                    <option value={8}>8 per page</option>
-                    <option value={15}>15 per page</option>
-                    <option value={35}>35 per page</option>
-                    <option value={50}>50 per page</option>
-                    <option value={100}>100 per page</option>
-                    <option value={150}>150 per page</option>
-                    <option value={200}>200 per page</option>
-                    <option value={this.props.total}>show all</option>
-                </select>
+                <ProductDispalyOption options={[8, 20, 50, 75, 90, 200, this.props.total]} onChange={this.onChange} />
                 <i className="fas fa-sort-down" />
             </div>
         );
